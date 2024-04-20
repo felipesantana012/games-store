@@ -1,0 +1,5 @@
+
+body{
+    color: var(--cor-fonte-principal);
+    background-image: var(--cor-background-principal);
+}

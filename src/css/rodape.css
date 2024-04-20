@@ -1,0 +1,30 @@
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 0.3rem;
+    padding-top: 3rem;
+    /* background-image: url('/src/img/imagem_footer.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    color: white; */
+    
+
+}
+
+.rodape__texto{
+    font-weight: 700;
+    font-size: 0.7rem;
+    font-family: var(--fonte-titulo); 
+}
+
+.rodape__imagem-links{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.contato__imagem-img{
+    width: 30px;
+}

@@ -1,0 +1,156 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.container h1{
+    font-size: 3rem;
+    background-image: url('/src/img/controle_play.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.container__produtos{
+    width: 100%;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+   
+}
+
+.container__produtos__meus-produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.container__produtos__meus-produtos h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.container__produtos__meus-produtos ul{
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    /* overflow-y: scroll;
+    height: 50%; */
+}
+
+.container__produtos__meus-produtos-item{
+    box-shadow: 1px 1px 10px 1px  rgb(0, 0, 0); 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-image: var(--cor-background-secundaria);
+    padding: 5px 4px ;
+    
+    
+}
+
+.container__produtos__meus-produtos-item h3{ 
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+.meus-produtos-item-valor-icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.imagem__jogo{
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.imagem__lixeira{
+    width: 25px;
+    cursor: pointer;
+   
+}
+
+.container__produtos__adicionar-produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+   
+}
+
+.container__produtos__adicionar-produtos h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.adicionar-produtos-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.adicionar-produtos-formulario-input{
+    border-radius: 1rem;
+    border: 3px solid rgb(28, 32, 80);
+    width: 380px;
+    padding: 0.9rem;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adicionar-produtos-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adicionar-produtos-btns button{
+    padding: 0.8rem;
+    border: 2px solid rgb(28, 32, 80);
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 48%;
+    background-image: var(--cor-background-terceraria);
+    color: white;
+    cursor: pointer;
+}
+
+.adicionar-produtos-btns button:hover{
+    opacity: 0.7;
+
+}
+
+
+
+@media screen and (max-width:1120px) {
+
+    .container__produtos{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .container__produtos__meus-produtos ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

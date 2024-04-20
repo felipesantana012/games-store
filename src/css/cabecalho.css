@@ -1,0 +1,14 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 2rem;
+    align-items: center;
+    box-shadow: 1px 1px 8px 1px rgb(72, 183, 202);
+    margin-bottom: 1rem;
+}
+
+.cabecalho__logo img{
+    max-width: 80px;
+   
+}
+

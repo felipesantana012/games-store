@@ -1,0 +1,17 @@
+:root{
+    /* Fontes */
+    --fonte-textos: 'Poppins', sans-serif;
+    --fonte-titulo: 'Merriweather', sans-serif;
+    --cor-fonte-principal: #ffffffe5;
+    --cor-fonte-secundaria: #050404af;
+   
+
+    /* Cores */
+    --cor-background-principal:linear-gradient(to right, rgb(4, 4, 5), rgb(6, 18, 26), rgb(1, 10, 12));
+    --cor-background-secundaria: linear-gradient(120deg, #30226d , #250807d0 , #270101);
+    --cor-background-terceraria: linear-gradient(120deg, #1d1e3f , #6c3badd0 , #0a007e);
+    
+
+
+    
+}
