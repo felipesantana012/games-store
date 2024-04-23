@@ -81,9 +81,8 @@ async function listaGames() {
 
     } catch (error) {
         card.innerHTML = `
-        <h2 class="menssagem__titulo">Não foi possivel carregar os Games </h2>
-        Error capturado : ${error}
-        `
+        <h2 class="menssagem__titulo">Não foi possivel carregar os Games </h2> `
+        console.log(`Error capturado : ${error}`)
     }
     
 }

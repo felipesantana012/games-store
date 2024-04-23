@@ -1,5 +1,23 @@
-
-body{
-    color: var(--cor-fonte-principal);
-    background-image: var(--cor-background-principal);
+body {
+    background-image: url('/src/img/imagem_fundo_form.jpg');
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+body::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .8;
+    z-index: -1;
 }
