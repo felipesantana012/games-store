@@ -35,20 +35,36 @@ async function criarPost(nome,preco,imagem){
 //--------------------------------------------------------------------------------------------------------------
 
 //metodo para contruir o card com as informações
- function constroiCard(nome, preco, imagem) {
+ function constroiCard(id,nome, preco, imagem) {
 
-    const card = document.querySelector("[data-card]")
-            card.innerHTML += `
-            <li class="container__produtos__meus-produtos-item" >
-            <img src="${imagem}" alt="imagem do jogo kratos" class="imagem__jogo">
-            <h3>${nome}</h3>
-        
-            <div class="meus-produtos-item-valor-icone">
-                <p>${preco}$</p>
-                <img src="/src/img/lixeira.png" alt="imagem da lixeira" class="imagem__lixeira">
-            </div>
-            </li>
-            `
+    const containerCards = document.querySelector("[data-card]");
+
+            const card = document.createElement("li");
+            card.classList.add("container__produtos__meus-produtos-item");
+
+            const img = document.createElement("img");
+            img.classList.add("imagem__jogo");
+            img.src = imagem;
+            img.alt = `imagem do game ${nome}`;
+            const h3 = document.createElement('h3');
+            h3.textContent = nome.toUpperCase();
+
+            const itemValor = document.createElement('div')
+            itemValor.classList.add('meus-produtos-item-valor-icone')
+            
+            const valor = document.createElement('p')
+            valor.textContent = `${preco} R$`
+
+            const imgLixeira = document.createElement('img')
+            imgLixeira.classList.add('imagem__lixeira')
+            imgLixeira.src = "/src/img/lixeira.png"
+            imgLixeira.alt = "imagem da lixeira"
+            imgLixeira.addEventListener('click',() => deletarCard(id))
+
+            containerCards.appendChild(card)
+            card.append(img,h3,itemValor)
+            itemValor.append(valor,imgLixeira)
+           
     return card;
 }
 
@@ -57,8 +73,12 @@ async function listaGames() {
     const card = document.querySelector("[data-card]")
     try {
         const listaApi = await buscarGames();
-        listaApi.forEach(elemento => 
-        constroiCard(elemento.nome, elemento.preco, elemento.imagem))
+        listaApi.forEach(elemento => card.appendChild(
+        constroiCard(elemento.id, elemento.nome, elemento.preco, elemento.imagem)
+        ))
+        
+
+
     } catch (error) {
         card.innerHTML = `
         <h2 class="menssagem__titulo">Não foi possivel carregar os Games </h2>
@@ -92,5 +112,16 @@ async function criarGame(evento){
 const formulario = document.querySelector('[data-formulario]');
 formulario.addEventListener('submit' , evento => criarGame(evento));
 
+
+async function deletarCard(id){
+    const conexao = await fetch(`http://localhost:3000/games/${id}` , {
+        method:'DELETE'})
+        if(conexao.ok){
+            console.log('apagado com sucesso')
+        }else{
+            console.log('falha ao apagar')
+        }
+
+    }
 
 

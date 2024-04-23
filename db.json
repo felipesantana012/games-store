@@ -1,64 +1,46 @@
 {
   "games": [
     {
-      "nome": "kratos of war",
-      "preco": "10,90",
-      "imagem": "https://i.pinimg.com/564x/78/b1/8e/78b18e31289fb5ff188e3c240174958d.jpg",
-      "id": 1
+      "id": "bf29",
+      "nome": "gta 5",
+      "preco": "39,90",
+      "imagem": "https://i.pinimg.com/564x/9e/f5/d3/9ef5d39f30f05691062204e39340c72b.jpg"
     },
     {
-      "nome": "Homem Aranha",
-      "preco": "20,99",
-      "imagem": "https://i.pinimg.com/564x/41/d2/9e/41d29ee44adf9c6cde211ae76e4b55ed.jpg",
-      "id": 1
+      "id": "b381",
+      "nome": "Watch dogs 2",
+      "preco": "199,97",
+      "imagem": "https://i.pinimg.com/564x/d8/e6/2b/d8e62bb2e102253419f6c79e354db42b.jpg"
     },
     {
-      "id": "a8b3",
-      "nome": "fifa",
-      "preco": "22",
+      "id": "8503",
+      "nome": "gta san andreas",
+      "preco": "19,90",
+      "imagem": "https://i.pinimg.com/564x/bc/bf/d4/bcbfd40a8dfed3c0dee3bc985a4624fe.jpg"
+    },
+    {
+      "id": "fff2",
+      "nome": "Mortal kombat",
+      "preco": "299,90",
+      "imagem": "https://i.pinimg.com/736x/3d/89/ad/3d89addfd34d5bbac339a6dfcacbcc18.jpg"
+    },
+    {
+      "id": "f6b9",
+      "nome": "Need for speed",
+      "preco": "9,89",
+      "imagem": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg"
+    },
+    {
+      "id": "936d",
+      "nome": "Fifa 24",
+      "preco": "75,20",
       "imagem": "https://i.pinimg.com/564x/58/59/1c/58591c3e35d402efcc7f20196bc6f8f9.jpg"
     },
     {
-      "id": "e3b1",
+      "id": "b917",
       "nome": "Mario",
-      "preco": "30,00",
+      "preco": "39,90",
       "imagem": "https://i.pinimg.com/564x/cd/fa/11/cdfa11759c59e3a8e34eedbe3b067c57.jpg"
-    },
-    {
-      "id": "2402",
-      "nome": "Mortal Kombat",
-      "preco": "99,90",
-      "imagem": "https://i.pinimg.com/564x/1e/90/2f/1e902fc50bbd432c5a6aab1d33bf4832.jpg"
-    },
-    {
-      "id": "6d6a",
-      "nome": "Super Man",
-      "preco": "120,90",
-      "imagem": "https://i.pinimg.com/564x/42/c7/ca/42c7cafa9e538a3d06f2a8ee2f9836d1.jpg"
-    },
-    {
-      "id": "84d9",
-      "nome": "Pantera Negra",
-      "preco": "55,30",
-      "imagem": "https://i.pinimg.com/564x/ac/e9/63/ace96360ae7824b8435c9d02467e7665.jpg"
-    },
-    {
-      "id": "ff6d",
-      "nome": "Goku",
-      "preco": "79,90",
-      "imagem": "https://i.pinimg.com/564x/41/b0/59/41b059919e263e295851da70331d3281.jpg"
-    },
-    {
-      "id": "251e",
-      "nome": "Naruto",
-      "preco": "99,90",
-      "imagem": "https://i.pinimg.com/736x/08/0f/0b/080f0b8de4a7fde193a2c13843c5f880.jpg"
-    },
-    {
-      "id": "7740",
-      "nome": "Dead Poll",
-      "preco": "200,00",
-      "imagem": "https://i.pinimg.com/564x/ef/53/a2/ef53a203fa960e767bac8324650ce600.jpg"
     }
   ]
 }
