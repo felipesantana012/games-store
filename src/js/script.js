@@ -102,11 +102,12 @@ async function criarGame(evento){
     try {
         await criarPost(nome, preco, imagem)
         alert('Game cadastrado com sucesso')
+        location.reload() //atualiza a pagina
 
     } catch (error) {
         alert(error)
     }
-    listaGames();
+    
 
 }
 
@@ -123,6 +124,7 @@ async function deletarCard(id){
         }else{
             console.log('falha ao apagar')
         }
+        location.reload()
 
     }
 
