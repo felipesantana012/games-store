@@ -106,8 +106,10 @@ async function criarGame(evento){
     } catch (error) {
         alert(error)
     }
+    listaGames();
 
 }
+
 
 const formulario = document.querySelector('[data-formulario]');
 formulario.addEventListener('submit' , evento => criarGame(evento));
