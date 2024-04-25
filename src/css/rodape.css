@@ -3,12 +3,11 @@
     flex-direction: column;
     align-items: center ;
     gap: 0.3rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     margin-top: 3rem;
     backdrop-filter: blur(5px);
     box-shadow: 1px 1px 8px 1px rgb(72, 183, 202);
     
-
 }
 
 .rodape__texto{

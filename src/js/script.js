@@ -80,7 +80,8 @@ async function listaGames() {
 
 
     } catch (error) {
-        card.innerHTML = `
+        const span = document.querySelector('span')
+        span.innerHTML = `
         <h2 class="menssagem__titulo">Não foi possivel carregar os Games </h2> `
         console.log(`Error capturado : ${error}`)
     }
@@ -88,7 +89,6 @@ async function listaGames() {
 }
 
 listaGames();
-
 
 
 //pegar os dados e envia para criar o game
